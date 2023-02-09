@@ -28,9 +28,8 @@ void solve(){
     {
         swap(lower, upper);
     }
-    double previousRoot = 1000;
 
-    while(true)
+    while(upper - lower >= epsilon)
     {
         root = (lower + upper) /2;
         if(function(root) * function(lower) <= 0)
@@ -44,10 +43,6 @@ void solve(){
         else{
             lower = root;
         }
-        if(abs((root-previousRoot)/root) < epsilon){
-            break;
-        }
-        previousRoot = root;
     }
     cout<< "The root is "<< root <<endl;
 }

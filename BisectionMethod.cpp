@@ -1,56 +1,58 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-class BisectionMethod{
-private:
-double epsilon = 0.001;
-double lower, upper;
-
-double function(double x)
+class BisectionMethod
 {
-    return x*x*x+x*x-1;
-}
+private:
+    double tolarence = 0.0001;
+    double a, b;
+    double function(double x)
+    {
+        return pow(x, 3) + pow(x, 2) - 1;
+    }
+
 public:
-double root;
-void solve(){
-    srand((int)time(0));
-    while(true)
+    void solve()
     {
-        lower = -9 + rand()%10;
-        upper = rand()%10;
-        if(function(lower) * function(upper) <= 0)
+        srand(time(0));
+        while (1)
         {
-            break;
+            a = -9 + rand() % 10;
+            b = rand() % 10;
+            if (function(a) * function(b) < 0)
+            {
+                break;
+            }
         }
-    }
-
-    if(upper<lower)
-    {
-        swap(lower, upper);
-    }
-
-    while(upper - lower >= epsilon)
-    {
-        root = (lower + upper) /2;
-        if(function(root) * function(lower) <= 0)
+        double root;
+        while (1)
         {
-            upper = root;
+            root = (a + b) / 2;
+            printf(" a = %9f b = %9f root = %9f\n", a, b, root);
+            if (function(root) == 0.0)
+            {
+                break;
+            }
+            if (function(root) * function(a) > 0)
+            {
+                a = root;
+            }
+            else
+            {
+                b = root;
+            }
+            if (abs(root - (a + b) / 2) < tolarence)
+            {
+                break;
+            }
         }
-        else if(function(root) == 0.0)
-        {
-            break;
-        }
-        else{
-            lower = root;
-        }
+        cout << "The root is " << root << " (correct upto 3 decimal places)" << endl;
     }
-    cout<< "The root is "<< root <<endl;
-}
 };
 
 int main()
 {
-    BisectionMethod x = BisectionMethod();
-    x.solve();
+    BisectionMethod b = BisectionMethod();
+    b.solve();
     return 0;
 }

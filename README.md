@@ -6,7 +6,7 @@
 - [Secand Method's Code](https://github.com/Shakil-RU/Numerical-Methods/blob/main/SecandMethod.cpp)
 - [Newton's Forward Interpolation Formula Code](https://github.com/Shakil-RU/Numerical-Methods/blob/main/Newton-Forward-Interpolation-Formula.cpp)
 - [Newton's Divided Interpolation Formula code](https://github.com/Shakil-RU/Numerical-Methods/blob/main/Newton-Divided-Interpolation-Formula.cpp)
-- [Lagrange's Interpolation Code](https://github.com/Shakil-RU/Numerical-Methods/blob/main/Lagrange-Interpolation-Formula.cpp)
+- [Lagrange Interpolation Formula Code](https://github.com/Shakil-RU/Numerical-Methods/blob/main/Lagrange-Interpolation-Formula.cpp)
 - [Least Square Curve Fitting Code](https://github.com/Shakil-RU/Numerical-Methods/blob/main/Least-Sqaure-Curve-Fitting.cpp)
 - [Trapezoidal Rule's Code](https://github.com/Shakil-RU/Numerical-Methods/blob/main/Trapezoidal-Rule.cpp)
 - [Simpsons Rule's Code](https://github.com/Shakil-RU/Numerical-Methods/blob/main/Simpsons-Rule.cpp)

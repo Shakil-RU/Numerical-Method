@@ -1,3 +1,7 @@
+Name : Abdullah Numan Shakil.</br>
+Dept. of Computer Science & Engineering.</br>
+University of Rajshahi.</br>
+
 # Numerical-Method
 
 - [Bisection Method's Code](https://github.com/Shakil-RU/Numerical-Methods/blob/main/BisectionMethod.cpp)
